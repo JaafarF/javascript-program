@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+  background-color: white;
+}
+
+.formGroup {
+  margin: 5px 0 22px 0;
+}
+
+/* Full-width input fields */
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 15px;
+  border-color: transparent;
+  display: inline-block;
+  background: #f1f1f1;
+}
+
+input[type='email']:focus,
+input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.required-star {
+  color: red;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.form-btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.valid {
+  border-color: #00800057 !important;
+}
+
+.nonvalid {
+  border-color: #ff000073 !important;
+}
+
+.error {
+  color: #ff0000ca;
+  font-size: 10px;
+}
