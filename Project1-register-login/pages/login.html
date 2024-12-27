@@ -19,13 +19,13 @@
     <form action="" id="loginForm">
       <div class="formGroup emailFormGroup">
         <label for="email">Email</label><span class="required-star">*</span>
-        <input type="email" id="email" required emailPattern value="ss@ss">
+        <input type="email" id="email" required emailPattern>
         <div class="error"></div>
       </div>
 
       <div class="formGroup passwordFormGroup">
         <label for="password">Password</label><span class="required-star">*</span>
-        <input type="password" id="password" required minlength="6" passwordPattern value="Password2?">
+        <input type="password" id="password" required>
         <div class="error"></div>
       </div>
 
@@ -33,6 +33,7 @@
         Login
       </button>
       <div class="error" id="gloablerror"></div>
+      <div class="notification" id="notification"></div>
     </form>
   </div>
   <script type="module" src="../scripts/login.js"></script>

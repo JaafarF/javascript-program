@@ -76,5 +76,10 @@ a {
 
 .error {
   color: #ff0000ca;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+.notification {
+  color: green;
+  font-size: 14px;
 }

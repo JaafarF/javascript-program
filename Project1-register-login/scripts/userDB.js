@@ -4,9 +4,19 @@ function getUsers() {
   return users;
 }
 
-function existUser(user) {
+function existUserByEmail(user) {
   const users = getUsers();
   return users.some(existingUser => existingUser.email === user.email);
+}
+
+function isCorrectPassword(user) {
+  const users = getUsers();
+  const storedUser = users.filter((su) => su.email === user.email)[0];
+  console.log(storedUser);
+  console.log(user);
+  
+  console.log(storedUser);
+  return storedUser.password == user.password;
 }
 
 function addUser(user) {
@@ -15,4 +25,4 @@ function addUser(user) {
   localStorage.setItem('users', JSON.stringify(users));
 }
 
-export { existUser, addUser }
+export { existUserByEmail, addUser, isCorrectPassword }
