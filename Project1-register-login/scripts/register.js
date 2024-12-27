@@ -1,4 +1,5 @@
 import { validateFormGroup } from '../scripts/validation.js';
+import { existUser, addUser } from './userDB.js';
 
 // Global errors div
 const gloablerror = document.querySelector('#gloablerror');
@@ -41,6 +42,16 @@ function onRegisterButtonClick(event) {
       "password": passwordInput.value,
       "confirmPassword": confirmPasswordInput.value,
     };
-    // call registration
+    registerUser(user);
+  }
+}
+
+function registerUser(user) {
+  gloablerror.textContent = ''
+  if (!existUser(user)) {
+    gloablerror.textContent = ''
+    addUser(user);
+  } else {
+    gloablerror.textContent = 'User with this email already exists'
   }
 }
