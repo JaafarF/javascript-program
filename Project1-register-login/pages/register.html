@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <p>
+      Already have an account?
+      <a href="#">Login</a>, instead.
+    </p>
+    <hr>
+    <form action="" id="registrationForm">
+      <div class="formGroup emailFormGroup">
+        <label for="email">Email</label><span class="required-star">*</span>
+        <input type="email" id="email" required emailPattern value="ss@ss">
+        <div class="error"></div>
+      </div>
+
+      <div class="formGroup passwordFormGroup">
+        <label for="password">Password</label><span class="required-star">*</span>
+        <input type="password" id="password" required minlength="6" passwordPattern value="Password2?">
+        <div class="error"></div>
+      </div>
+
+
+      <div class="formGroup confirmPasswordFormGroup">
+        <label for="confirmPassword">Confirm Password</label><span class="required-star">*</span>
+        <input type="password" id="confirmPassword" required match="password" value="Password2?">
+        <div class="error"></div>
+      </div>
+
+
+      <button type="submit" id="register-btn" class="form-btn">
+        Register
+      </button>
+      <div class="error" id="gloablerror"></div>
+    </form>
+  </div>
+  <script type="module" src="../scripts/register.js"></script>
+</body>
+
+</html>
