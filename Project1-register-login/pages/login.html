@@ -13,23 +13,23 @@
     <h1>Login</h1>
     <p>
       Dont't have an account yet?
-      <a href="#">Register</a>, instead.
+      <a href="register.html">Register</a>, instead.
     </p>
     <hr>
     <form action="" id="loginForm">
       <div class="formGroup emailFormGroup">
         <label for="email">Email</label><span class="required-star">*</span>
-        <input type="email" id="email" required emailPattern>
+        <input type="email" id="email" required emailPattern value="ss@ss" autocomplete="username">
         <div class="error"></div>
       </div>
 
       <div class="formGroup passwordFormGroup">
         <label for="password">Password</label><span class="required-star">*</span>
-        <input type="password" id="password" required>
+        <input type="password" id="password" required autocomplete="current-password">
         <div class="error"></div>
       </div>
 
-      <button type="submit" id="register-btn" class="form-btn">
+      <button type="submit" id="loginButton" class="form-btn">
         Login
       </button>
       <div class="error" id="gloablerror"></div>

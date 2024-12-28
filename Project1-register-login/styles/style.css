@@ -83,3 +83,9 @@ a {
   color: green;
   font-size: 14px;
 }
+
+button:disabled {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
